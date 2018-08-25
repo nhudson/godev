@@ -17,6 +17,7 @@ This will import your VIM, AWS, GitHub, and SSH environment from your local mach
 
 To run you need to issue the following command
 
+           $ docker pull nhudson/godev
            $ docker run -it --rm \
                 -v $(dirname $SSH_AUTH_SOCK) \
                 -v $HOME/.ssh:/tmp/.ssh:ro \
