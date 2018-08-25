@@ -42,7 +42,7 @@ By default the image contains zsh and [oh-my-zsh](https://github.com/robbyrussel
 To make things a bit easier you can create a function to run this inside your shell.  This can work in either `zsh` or `bash`.  The example below is for `zsh`.
 
         $ cat ~/.zsh/dockerfunc 
-            golang () {
+            godev () {
                 docker run -it --rm \
                     -v $(dirname $SSH_AUTH_SOCK) \
                     -v $HOME/.ssh:/tmp/.ssh:ro \
